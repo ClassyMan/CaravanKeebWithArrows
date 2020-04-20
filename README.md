@@ -22,4 +22,4 @@ QMK's visual configurator does not yet/may never support this board with the arr
 
 Anyway I'm a huge fan of vankeebs and I hope you are too so if you do end up getting stuck then holla at ya boi. I basically never check github for messages though so olkb and qmk's copious documentation is a better bet. 
 
-Good luck in all your keeby adventures. 
+Good luck in all your keeby adventures. :v: :metal: :fist_raised:	
