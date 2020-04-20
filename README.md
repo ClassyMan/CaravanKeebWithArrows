@@ -1,7 +1,8 @@
 # CaravanKeebWithArrows
 I got thevankeyboards/caravan but the default qmk firmware doesn't allow for arrows on the default layer so I fixed it. Learnt a lot along the way! The board is a split 44% by default but this mapping turns it into a 45%. There's an extra switch location on the PCB which just requires a bit of soldering and an extra switch to enable. 
 
-## *Disclaimer*: The board is from https://thevankeyboards.com/, I am not in any way affiliated with them, just a fan.  _*I can't guarantee this won't brick your board*_, It works for me but you need to be informed about how QMK works and you need to understand that you're doing this stuff at your own risk and if you break it by not knowing what you're doing that's your responsibility. Look at the documentation on QMK for more info https://docs.qmk.fm/#/ . There's also a qmk subreddit others have found useful: https://www.reddit.com/r/olkb/ 
+## *Disclaimer*: 
+The board is from https://thevankeyboards.com/, I am not in any way affiliated with them, just a fan.  _*I can't guarantee this won't brick your board*_, It works for me but you need to be informed about how QMK works and you need to understand that you're doing this stuff at your own risk and if you break it by not knowing what you're doing that's your responsibility. Look at the documentation on QMK for more info https://docs.qmk.fm/#/ . There's also a qmk subreddit others have found useful: https://www.reddit.com/r/olkb/ 
 
 # Some guidance: 
 
