@@ -11,6 +11,7 @@ enum custom_keycodes {
   QMKBEST = SAFE_RANGE,
   SCHEDULESTATUS,
   FORLOOP,
+  WHILELOOP,
   JIRAQUOTE,
   JIRACODE,
   SCREENSHOT,
@@ -41,6 +42,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case FORLOOP:
       if (record->event.pressed) {
         SEND_STRING("for (int i = 0; i < array.length; i++) {}");
+        tap_code(KC_LEFT);
+        tap_code(KC_ENT);
+      }
+      break;
+    case WHILELOOP: 
+      if (record->event.pressed) {
+        SEND_STRING("while (condition) {}");         
         tap_code(KC_LEFT);
         tap_code(KC_ENT);
       }
@@ -94,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_FN3] = LAYOUT( /* F keys */
     KC_LGUI,        JIRAQUOTE,      KC_LGUI,        KC_TRANSPARENT, RESET,          KC_TRANSPARENT, KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,         KC_F12,
-    KC_INSERT,      KC_TRANSPARENT, SCHEDULESTATUS, KC_TRANSPARENT, FORLOOP,        KC_TRANSPARENT, KC_F4,          KC_F5,          KC_F6,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+    KC_INSERT,      KC_TRANSPARENT, SCHEDULESTATUS, KC_TRANSPARENT, FORLOOP,        WHILELOOP,      KC_F4,          KC_F5,          KC_F6,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_TRANSPARENT, KC_TRANSPARENT, SCREENSHOT,     JIRACODE,       KC_TRANSPARENT, KC_TRANSPARENT, KC_F1,          KC_F2,          KC_F3,          KC_MUTE,        KC_TRANSPARENT, KC_TRANSPARENT,
     KC_TRANSPARENT, MO(_FN3),       KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
