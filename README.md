@@ -28,6 +28,6 @@ Good luck in all your keeby adventures. :v: :metal: :fist_raised:
 
 When I'm done tinkering around and have a relatively stable version I will release. 
 
-The release version will be of the form \<iso-date\>-\<layout most recently updated\>
+The release version will be of the form ```<iso-date>-<layout most recently updated>```
 
 **For example:** 20220412-coding
