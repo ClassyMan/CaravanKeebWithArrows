@@ -6,17 +6,17 @@ The board is from https://thevankeyboards.com/, I am not in any way affiliated w
 
 # Some guidance: 
 
-In order to flash the keyboard you'll want to use the 'macros' keymap. However bear in mind this is slightly different to the default one. For starters enter is where it should be and so is esc, alt, o/s etc. It actually makes the board more traditional. 
+In order to flash the keyboard you'll want to use the 'coding' keymap as it is the most up-to-date. However bear in mind this is slightly different to the default one. For starters enter is where it should be and so is esc, alt, o/s etc. It actually makes the board more traditional. 
 
-Put these files in your qmk_firmware/keyboards/ folder
+Put these files in your qmk_firmware/keyboards/ folder. Putting "caravan_2_arrows_proper" directly in the keyboards folder is what makes the following commands work. _Do not put them under thevankeyboards as the following commands will then not work._
 
 To flash use this command:
 
-  ```qmk flash -kb caravan_2_arrows_proper -km macros```
+  ```qmk flash -kb caravan_2_arrows_proper -km coding```
  
 To edit the layout use:
  
-  ```nano keyboards/caravan_2_arrows_proper/keymaps/macros/keymap.c```
+  ```nano keyboards/caravan_2_arrows_proper/keymaps/coding/keymap.c```
  
 QMK's visual configurator does not yet/may never support this board with the arrow cluster since it's so rare, heck thevankeyboards don't even support it on their configurator. There are some extra layers above the default one, this is the bare minimum required for java development as I have discovered.  
 
